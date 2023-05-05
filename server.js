@@ -6,10 +6,11 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    '49.36.101.102:3003',
-    '172.70.218.175:3003',
-    '10.223.164.160:3003',
-    '10.223.26.169:3003',
+    'http://49.36.101.102:3003',
+    'http://172.70.218.175:3003',
+    'http://10.223.164.160:3003',
+    'http://10.223.26.169:3003',
+    'http://localhost:3003',
   ],
   credentials: true,
   exposedHeaders: ['Set-Cookie'],
