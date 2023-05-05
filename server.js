@@ -15,7 +15,7 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-  return '<div>Hello from NodeCode!</div>';
+  res.send('<div>Hello from NodeCode!</div>');
 });
 
 app.post('/get-cookie', (req, res) => {
