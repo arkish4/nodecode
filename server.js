@@ -23,6 +23,7 @@ app.post('/get-cookie', (req, res) => {
     maxAge: 86400000,
     httpOnly: true,
     sameSite: 'none',
+    secure: true,
     // domain: 'http://localhost:3003',
     path: '/',
   });
