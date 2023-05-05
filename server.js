@@ -27,6 +27,10 @@ app.post('/get-cookie', (req, res) => {
     // domain: 'http://localhost:3003',
     path: '/',
   });
+  console.log(
+    'Req Header -------------------------------------------------------------'
+  );
+  console.log(req.headers);
   console.log('cookie set');
   res.json('Cookie set!');
 });
