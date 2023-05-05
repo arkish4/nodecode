@@ -6,11 +6,12 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    'http://49.36.101.102:3003',
-    'http://172.70.218.175:3003',
-    'http://10.223.164.160:3003',
-    'http://10.223.26.169:3003',
-    'http://localhost:3003',
+    'https://reactcode.onrender.com',
+    // 'http://49.36.101.102:3003',
+    // 'http://172.70.218.175:3003',
+    // 'http://10.223.164.160:3003',
+    // 'http://10.223.26.169:3003',
+    // 'http://localhost:3003',
   ],
   credentials: true,
   exposedHeaders: ['Set-Cookie'],
@@ -31,11 +32,12 @@ app.post('/get-cookie', (req, res) => {
     sameSite: 'none',
     secure: true,
     domain: [
-      '.49.36.101.102',
-      '.172.70.218.175',
-      '.10.223.164.160',
-      '.10.223.26.169',
-      '.localhost',
+      'https://reactcode.onrender.com',
+      // '.49.36.101.102',
+      // '.172.70.218.175',
+      // '.10.223.164.160',
+      // '.10.223.26.169',
+      // '.localhost',
     ],
     path: '/',
   });
