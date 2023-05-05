@@ -14,7 +14,11 @@ app.use(cors(corsOptions));
 
 app.use(cookieParser());
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
+  return <div>Hello from NodeCode!</div>;
+});
+
+app.post('/get-cookie', (req, res) => {
   res.cookie('mycookie', 'cookie value', {
     maxAge: 86400000,
     httpOnly: true,
