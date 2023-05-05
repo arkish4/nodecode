@@ -30,7 +30,13 @@ app.post('/get-cookie', (req, res) => {
     httpOnly: true,
     sameSite: 'none',
     secure: true,
-    // domain: 'http://localhost:3003',
+    domain: [
+      '.49.36.101.102',
+      '.172.70.218.175',
+      '.10.223.164.160',
+      '.10.223.26.169',
+      '.localhost',
+    ],
     path: '/',
   });
   console.log(
