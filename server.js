@@ -5,7 +5,12 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3003',
+  origin: [
+    '49.36.101.102:3003',
+    '172.70.218.175:3003',
+    '10.223.164.160:3003',
+    '10.223.26.169:3003',
+  ],
   credentials: true,
   exposedHeaders: ['Set-Cookie'],
 };
