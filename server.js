@@ -22,7 +22,7 @@ app.post('/get-cookie', (req, res) => {
   res.cookie('mycookie', 'cookie value', {
     maxAge: 86400000,
     httpOnly: true,
-    // sameSite: 'none',
+    sameSite: 'none',
     // domain: 'http://localhost:3003',
     path: '/',
   });
