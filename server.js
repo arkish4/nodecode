@@ -32,7 +32,7 @@ app.post('/get-cookie', (req, res) => {
     sameSite: 'none',
     secure: true,
     domain: [
-      '.onrender.com',
+      'onrender.com',
       // '.49.36.101.102',
       // '.172.70.218.175',
       // '.10.223.164.160',
